@@ -37,7 +37,7 @@ try {
             'model' => 'gpt-4o',
             'messages' => [
                 ['role' => 'system', 'content' => 'You are a helpful assistant.'],
-                ['role' => 'user', 'content' => 'This is a report that contains CVEs, CWEs and vulnerability info for websites. Extract each CVE, CWE and vulnerability with its number, get links for each CVE and CWE, description and solution for each CVE and CWE and vulnerability, and the degree of severity of the vulnerability (Critical, High, Medium, or Low) for each CVE and CWE and vulnerability.'],
+                ['role' => 'user', 'content' => 'This is a report that contains CVEs, CWEs and vulnerability info for websites. Extract each CVE, CWE and vulnerability with its number, get links for each CVE and CWE, description, solution, and the attack vector for each CVE and CWE and vulnerability, and the degree of severity of the vulnerability (Critical, High, Medium, or Low) for each CVE and CWE and vulnerability.'],
                 ['role' => 'user', 'content' => $reportContent]
             ],
             'temperature' => 0.0,
@@ -105,21 +105,21 @@ try {
     }
 
     // Function to extract patch URLs from the website content
-    function extract_patch_urls($html_content) {
-        $patch_urls = [];
-        $dom = new DOMDocument();
-        @$dom->loadHTML($html_content); // Use @ to suppress warnings from malformed HTML
-        $xpath = new DOMXPath($dom);
-        $nodes = $xpath->query('//a[@href]');
+    // function extract_patch_urls($html_content) {
+    //     $patch_urls = [];
+    //     $dom = new DOMDocument();
+    //     @$dom->loadHTML($html_content); // Use @ to suppress warnings from malformed HTML
+    //     $xpath = new DOMXPath($dom);
+    //     $nodes = $xpath->query('//a[@href]');
         
-        foreach ($nodes as $node) {
-            $url = $node->getAttribute('href');
-            if (is_patch_link($url)) {
-                $patch_urls[] = $url;
-            }
-        }
-        return $patch_urls;
-    }
+    //     foreach ($nodes as $node) {
+    //         $url = $node->getAttribute('href');
+    //         if (is_patch_link($url)) {
+    //             $patch_urls[] = $url;
+    //         }
+    //     }
+    //     return $patch_urls;
+    // }
 
     // Function to check if a URL likely points to a patch file
     function is_patch_link($url) {
@@ -159,25 +159,25 @@ try {
         'https://www.oracle.com/security-alerts/',
     ];
 
-    // Search for patches for each CVE and download them
-    foreach ($cveList as $cve_id) {
-        echo "Searching for patches for $cve_id...\n";
+    // // Search for patches for each CVE and download them
+    // foreach ($cveList as $cve_id) {
+    //     echo "Searching for patches for $cve_id...\n";
 
-        foreach ($websites as $base_url) {
-            $search_url = $base_url . $cve_id;
-            $html_content = search_site($search_url);
-            if ($html_content) {
-                $patch_urls = extract_patch_urls($html_content);
-                foreach ($patch_urls as $patch_url) {
-                    download_patch($patch_url, $downloadDir);
-                }
-            } else {
-                echo "No information found for $cve_id on $base_url.\n";
-            }
-        }
-    }
+    //     foreach ($websites as $base_url) {
+    //         $search_url = $base_url . $cve_id;
+    //         $html_content = search_site($search_url);
+    //         if ($html_content) {
+    //             // $patch_urls = extract_patch_urls($html_content);
+    //             foreach ($patch_urls as $patch_url) {
+    //                 download_patch($patch_url, $downloadDir);
+    //             }
+    //         } else {
+    //             echo "No information found for $cve_id on $base_url.\n";
+    //         }
+    //     }
+    // // }
 
-    echo "Patch download completed.\n";
+    // echo "Patch download completed.\n";
 
 } catch (RequestException $e) {
     if ($e->hasResponse()) {

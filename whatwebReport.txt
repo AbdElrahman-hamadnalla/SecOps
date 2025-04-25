@@ -1,7 +1,7 @@
 WhatWeb report for [1m[34mhttps://google-gruyere.appspot.com/part1[0m
 Status    : 200 OK
 Title     : [1m[33mWeb Application Exploits and Defenses[0m
-IP        : 142.250.200.212
+IP        : 142.250.201.52
 Country   : [1m[31mUNITED STATES, US[0m
 
 Summary   : [1mHTTPServer[0m[[1m[36mGoogle Frontend[0m], [1mScript[0m, [1mUncommonHeaders[0m[[0m[22mx-cloud-trace-context,alt-svc[0m]
@@ -32,8 +32,8 @@ HTTP Headers:
 	Cache-Control: no-cache
 	Pragma: no-cache
 	Content-Type: text/html; charset=utf-8
-	X-Cloud-Trace-Context: 3364136ec823214651a7f9ee62707764
-	Date: Fri, 04 Apr 2025 09:36:56 GMT
+	X-Cloud-Trace-Context: 1af9904476a1f2b4ee3293770e0f9a36
+	Date: Fri, 25 Apr 2025 06:04:27 GMT
 	Server: Google Frontend
 	Content-Length: 13650
 	Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000

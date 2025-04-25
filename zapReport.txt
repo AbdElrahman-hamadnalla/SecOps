@@ -2,7 +2,7 @@ Found Java version 23.0.2
 Available memory: 11883 MB
 Using JVM args: -Xmx2970m
 <?xml version="1.0"?>
-<OWASPZAPReport programName="ZAP" version="2.16.1" generated="Fri, 4 Apr 2025 11:37:32">
+<OWASPZAPReport programName="ZAP" version="2.16.1" generated="Fri, 25 Apr 2025 09:05:07">
 	
 		<site name="https://google-gruyere.appspot.com" host="google-gruyere.appspot.com" port="443" ssl="true">
 			<alerts>
@@ -70,6 +70,76 @@ Using JVM args: -Xmx2970m
 							
 							
 								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login?pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/newaccount.gtl</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://google-gruyere.appspot.com/4</uri>
 									<method>GET</method>
 									<param></param>
@@ -81,76 +151,6 @@ Using JVM args: -Xmx2970m
 							
 								<instance>
 									<uri>https://google-gruyere.appspot.com/5</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login?pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/newaccount.gtl</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -625,7 +625,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://developer.mozilla.org/en-US/docs/Web/Security/CSP/Introducing_Content_Security_Policy&lt;/p&gt;&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html&lt;/p&gt;&lt;p&gt;https://www.w3.org/TR/CSP/&lt;/p&gt;&lt;p&gt;https://w3c.github.io/webappsec-csp/&lt;/p&gt;&lt;p&gt;https://web.dev/articles/csp&lt;/p&gt;&lt;p&gt;https://caniuse.com/#feat=contentsecuritypolicy&lt;/p&gt;&lt;p&gt;https://content-security-policy.com/&lt;/p&gt;</reference>
 						<cweid>693</cweid>
 						<wascid>15</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -692,6 +692,76 @@ Using JVM args: -Xmx2970m
 							
 							
 								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login?pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/newaccount.gtl</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
+									<method>GET</method>
+									<param>x-frame-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://google-gruyere.appspot.com/4</uri>
 									<method>GET</method>
 									<param>x-frame-options</param>
@@ -703,76 +773,6 @@ Using JVM args: -Xmx2970m
 							
 								<instance>
 									<uri>https://google-gruyere.appspot.com/5</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login?pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/newaccount.gtl</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
-									<method>GET</method>
-									<param>x-frame-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param>x-frame-options</param>
 									<attack></attack>
@@ -1237,7 +1237,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options&lt;/p&gt;</reference>
 						<cweid>1021</cweid>
 						<wascid>15</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -1254,7 +1254,7 @@ Using JVM args: -Xmx2970m
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>GRUYERE</param>
 									<attack></attack>
@@ -1279,7 +1279,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://owasp.org/www-community/HttpOnly&lt;/p&gt;</reference>
 						<cweid>1004</cweid>
 						<wascid>13</wascid>
-						<sourceid>206</sourceid>
+						<sourceid>207</sourceid>
 					</alertitem>
 				
 				
@@ -1296,7 +1296,7 @@ Using JVM args: -Xmx2970m
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>GRUYERE</param>
 									<attack></attack>
@@ -1321,7 +1321,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/06-Session_Management_Testing/02-Testing_for_Cookies_Attributes.html&lt;/p&gt;</reference>
 						<cweid>614</cweid>
 						<wascid>13</wascid>
-						<sourceid>206</sourceid>
+						<sourceid>207</sourceid>
 					</alertitem>
 				
 				
@@ -1338,7 +1338,7 @@ Using JVM args: -Xmx2970m
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>GRUYERE</param>
 									<attack></attack>
@@ -1363,7 +1363,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://tools.ietf.org/html/draft-ietf-httpbis-cookie-same-site&lt;/p&gt;</reference>
 						<cweid>1275</cweid>
 						<wascid>13</wascid>
-						<sourceid>206</sourceid>
+						<sourceid>207</sourceid>
 					</alertitem>
 				
 				
@@ -1460,6 +1460,86 @@ Using JVM args: -Xmx2970m
 							
 							
 								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/lib.js</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login?pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/newaccount.gtl</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
+									<method>GET</method>
+									<param></param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://google-gruyere.appspot.com/4</uri>
 									<method>GET</method>
 									<param></param>
@@ -1471,86 +1551,6 @@ Using JVM args: -Xmx2970m
 							
 								<instance>
 									<uri>https://google-gruyere.appspot.com/5</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/lib.js</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login?pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/newaccount.gtl</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
-									<method>GET</method>
-									<param></param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -2285,7 +2285,7 @@ Using JVM args: -Xmx2970m
 						<reference>&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;&lt;p&gt;https://en.wikipedia.org/wiki/HTTP_Strict_Transport_Security&lt;/p&gt;&lt;p&gt;https://caniuse.com/stricttransportsecurity&lt;/p&gt;&lt;p&gt;https://datatracker.ietf.org/doc/html/rfc6797&lt;/p&gt;</reference>
 						<cweid>319</cweid>
 						<wascid>15</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -2357,6 +2357,94 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 							
 							
 								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/lib.js</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login?pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/newaccount.gtl</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
+									<method>GET</method>
+									<param>x-content-type-options</param>
+									<attack></attack>
+									<evidence></evidence>
+									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
+At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://google-gruyere.appspot.com/4</uri>
 									<method>GET</method>
 									<param>x-content-type-options</param>
@@ -2369,94 +2457,6 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 							
 								<instance>
 									<uri>https://google-gruyere.appspot.com/5</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/lib.js</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login?pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/newaccount.gtl</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
-									<method>GET</method>
-									<param>x-content-type-options</param>
-									<attack></attack>
-									<evidence></evidence>
-									<otherinfo>This issue still applies to error type pages (401, 403, 500, etc.) as those pages are often still affected by injection issues, in which case there is still concern for browsers sniffing pages away from their actual content type.
-At &quot;High&quot; threshold this scan rule will not alert on client or server error responses.</otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param>x-content-type-options</param>
 									<attack></attack>
@@ -3088,7 +3088,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<reference>&lt;p&gt;https://learn.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/gg622941(v=vs.85)&lt;/p&gt;&lt;p&gt;https://owasp.org/www-community/Security_Headers&lt;/p&gt;</reference>
 						<cweid>693</cweid>
 						<wascid>15</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -3170,7 +3170,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<reference>&lt;p&gt;https://code.google.com/p/browsersec/wiki/Part2#Character_set_handling_and_detection&lt;/p&gt;</reference>
 						<cweid>436</cweid>
 						<wascid>15</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -3187,7 +3187,7 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>pw</param>
 									<attack></attack>
@@ -3196,10 +3196,10 @@ At &quot;High&quot; threshold this scan rule will not alert on client or server 
 
 This was identified at:
 
-https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP
+https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP
 
 User-input was found in the following cookie:
-GRUYERE=26087470|ZAP||author; path=/575390676042389623505523305242566233541
+GRUYERE=26087470|ZAP||author; path=/389682622478439676714126797984216332077
 
 The user input was:
 pw=ZAP</otherinfo>
@@ -3207,7 +3207,7 @@ pw=ZAP</otherinfo>
 							
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>uid</param>
 									<attack></attack>
@@ -3216,10 +3216,10 @@ pw=ZAP</otherinfo>
 
 This was identified at:
 
-https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP
+https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP
 
 User-input was found in the following cookie:
-GRUYERE=26087470|ZAP||author; path=/575390676042389623505523305242566233541
+GRUYERE=26087470|ZAP||author; path=/389682622478439676714126797984216332077
 
 The user input was:
 uid=ZAP</otherinfo>
@@ -3228,11 +3228,11 @@ uid=ZAP</otherinfo>
 						</instances>
 						<count>2</count>
 						<solution>&lt;p&gt;Do not allow user input to control cookie names and values. If some query string parameters must be set in cookie values, be sure to filter out semicolon&apos;s that can serve as name/value pair delimiters.&lt;/p&gt;</solution>
-						<otherinfo>&lt;p&gt;An attacker may be able to poison cookie values through URL parameters. Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This was identified at:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;User-input was found in the following cookie:&lt;/p&gt;&lt;p&gt;GRUYERE=26087470|ZAP||author; path=/575390676042389623505523305242566233541&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user input was:&lt;/p&gt;&lt;p&gt;pw=ZAP&lt;/p&gt;</otherinfo>
+						<otherinfo>&lt;p&gt;An attacker may be able to poison cookie values through URL parameters. Try injecting a semicolon to see if you can add cookie values (e.g. name=controlledValue;name=anotherValue;).&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;This was identified at:&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;User-input was found in the following cookie:&lt;/p&gt;&lt;p&gt;GRUYERE=26087470|ZAP||author; path=/389682622478439676714126797984216332077&lt;/p&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;The user input was:&lt;/p&gt;&lt;p&gt;pw=ZAP&lt;/p&gt;</otherinfo>
 						<reference>&lt;p&gt;https://en.wikipedia.org/wiki/HTTP_cookie&lt;/p&gt;&lt;p&gt;https://cwe.mitre.org/data/definitions/565.html&lt;/p&gt;</reference>
 						<cweid>565</cweid>
 						<wascid>20</wascid>
-						<sourceid>206</sourceid>
+						<sourceid>207</sourceid>
 					</alertitem>
 				
 				
@@ -3249,7 +3249,7 @@ uid=ZAP</otherinfo>
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/lib.js</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/lib.js</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
@@ -3278,7 +3278,7 @@ uid=ZAP</otherinfo>
 						<reference></reference>
 						<cweid>615</cweid>
 						<wascid>13</wascid>
-						<sourceid>204</sourceid>
+						<sourceid>199</sourceid>
 					</alertitem>
 				
 				
@@ -3305,34 +3305,34 @@ uid=ZAP</otherinfo>
 							
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>&lt;a class=&apos;button&apos; onclick=&apos;_refreshHome(&quot;575390676042389623505523305242566233541&quot;)&apos; href=&apos;#&apos;&gt;Refresh&lt;/a&gt;</evidence>
+									<evidence>&lt;a class=&apos;button&apos; onclick=&apos;_refreshHome(&quot;389682622478439676714126797984216332077&quot;)&apos; href=&apos;#&apos;&gt;Refresh&lt;/a&gt;</evidence>
 									<otherinfo>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>&lt;a class=&apos;button&apos;
-  onclick=&apos;_refreshSnippets(&quot;575390676042389623505523305242566233541&quot;, &quot;brie&quot;)&apos;
+  onclick=&apos;_refreshSnippets(&quot;389682622478439676714126797984216332077&quot;, &quot;brie&quot;)&apos;
   href=&apos;#&apos;&gt;Refresh&lt;/a&gt;</evidence>
 									<otherinfo>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</otherinfo>
 								</instance>
 							
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
 									<evidence>&lt;a class=&apos;button&apos;
-  onclick=&apos;_refreshSnippets(&quot;575390676042389623505523305242566233541&quot;, &quot;cheddar&quot;)&apos;
+  onclick=&apos;_refreshSnippets(&quot;389682622478439676714126797984216332077&quot;, &quot;cheddar&quot;)&apos;
   href=&apos;#&apos;&gt;Refresh&lt;/a&gt;</evidence>
 									<otherinfo>Links have been found that do not have traditional href attributes, which is an indication that this is a modern web application.</otherinfo>
 								</instance>
@@ -3394,7 +3394,7 @@ uid=ZAP</otherinfo>
 						<reference></reference>
 						<cweid>-1</cweid>
 						<wascid>-1</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -3461,6 +3461,76 @@ uid=ZAP</otherinfo>
 							
 							
 								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/login?pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/newaccount.gtl</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=brie</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/snippets.gtl?uid=cheddar</uri>
+									<method>GET</method>
+									<param>cache-control</param>
+									<attack></attack>
+									<evidence>no-cache</evidence>
+									<otherinfo></otherinfo>
+								</instance>
+							
+							
+								<instance>
 									<uri>https://google-gruyere.appspot.com/4</uri>
 									<method>GET</method>
 									<param>cache-control</param>
@@ -3472,76 +3542,6 @@ uid=ZAP</otherinfo>
 							
 								<instance>
 									<uri>https://google-gruyere.appspot.com/5</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/login?pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/newaccount.gtl</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=brie</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>no-cache</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/snippets.gtl?uid=cheddar</uri>
 									<method>GET</method>
 									<param>cache-control</param>
 									<attack></attack>
@@ -3961,16 +3961,6 @@ uid=ZAP</otherinfo>
 							
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/robots.txt</uri>
-									<method>GET</method>
-									<param>cache-control</param>
-									<attack></attack>
-									<evidence>public, max-age=600</evidence>
-									<otherinfo></otherinfo>
-								</instance>
-							
-							
-								<instance>
 									<uri>https://google-gruyere.appspot.com/start</uri>
 									<method>GET</method>
 									<param>cache-control</param>
@@ -3990,13 +3980,13 @@ uid=ZAP</otherinfo>
 								</instance>
 							
 						</instances>
-						<count>58</count>
+						<count>57</count>
 						<solution>&lt;p&gt;For secure content, ensure the cache-control HTTP header is set with &quot;no-cache, no-store, must-revalidate&quot;. If an asset should be cached consider setting the directives &quot;public, max-age, immutable&quot;.&lt;/p&gt;</solution>
 						<otherinfo></otherinfo>
 						<reference>&lt;p&gt;https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html#web-content-caching&lt;/p&gt;&lt;p&gt;https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control&lt;/p&gt;&lt;p&gt;https://grayduck.mn/2021/09/13/cache-control-recommendations/&lt;/p&gt;</reference>
 						<cweid>525</cweid>
 						<wascid>13</wascid>
-						<sourceid>50</sourceid>
+						<sourceid>40</sourceid>
 					</alertitem>
 				
 				
@@ -4017,7 +4007,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4027,7 +4017,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4037,7 +4027,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4047,7 +4037,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4067,7 +4057,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4087,7 +4077,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4097,7 +4087,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 262</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4117,7 +4107,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4127,7 +4117,7 @@ uid=ZAP</otherinfo>
 									<method>GET</method>
 									<param></param>
 									<attack></attack>
-									<evidence>Age: 0</evidence>
+									<evidence>Age: 261</evidence>
 									<otherinfo>The presence of the &apos;Age&apos; header indicates that a HTTP/1.1 compliant caching server is in use.</otherinfo>
 								</instance>
 							
@@ -4138,7 +4128,7 @@ uid=ZAP</otherinfo>
 						<reference>&lt;p&gt;https://tools.ietf.org/html/rfc7234&lt;/p&gt;&lt;p&gt;https://tools.ietf.org/html/rfc7231&lt;/p&gt;&lt;p&gt;https://www.rfc-editor.org/rfc/rfc9110.html&lt;/p&gt;</reference>
 						<cweid>-1</cweid>
 						<wascid>-1</wascid>
-						<sourceid>92</sourceid>
+						<sourceid>93</sourceid>
 					</alertitem>
 				
 				
@@ -4155,7 +4145,7 @@ uid=ZAP</otherinfo>
 						<instances>
 							
 								<instance>
-									<uri>https://google-gruyere.appspot.com/575390676042389623505523305242566233541/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
+									<uri>https://google-gruyere.appspot.com/389682622478439676714126797984216332077/saveprofile?action=new&amp;is_author=True&amp;pw=ZAP&amp;uid=ZAP</uri>
 									<method>GET</method>
 									<param>GRUYERE</param>
 									<attack></attack>
@@ -4170,7 +4160,7 @@ cookie:GRUYERE</otherinfo>
 									<method>GET</method>
 									<param>GRUYERE_ID</param>
 									<attack></attack>
-									<evidence>575390676042389623505523305242566233541</evidence>
+									<evidence>389682622478439676714126797984216332077</evidence>
 									<otherinfo>
 cookie:GRUYERE_ID</otherinfo>
 								</instance>
@@ -4182,7 +4172,7 @@ cookie:GRUYERE_ID</otherinfo>
 						<reference>&lt;p&gt;https://www.zaproxy.org/docs/desktop/addons/authentication-helper/session-mgmt-id&lt;/p&gt;</reference>
 						<cweid>-1</cweid>
 						<wascid>-1</wascid>
-						<sourceid>206</sourceid>
+						<sourceid>207</sourceid>
 					</alertitem>
 				
 			</alerts>
