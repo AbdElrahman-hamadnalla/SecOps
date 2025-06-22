@@ -1,0 +1,5 @@
+[91m
+	XSStrike [97mv3.1.5
+[0m
+[97m[~][0m Checking for DOM vulnerabilities [0m
+[91m[-][0m No parameters to test. [0m

@@ -1,4 +1,4 @@
-                                                              THE COMPILED REPORT for https://google-gruyere.appspot.com/part1
+                                                              THE COMPILED REPORT for https://google-gruyere.appspot.com/part2
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the nmap output
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -13,89 +13,112 @@
 <cweid>614
 <cweid>615
 <cweid>693
+Content Security Policy (CSP) Header Not Set
+Missing Anti-clickjacking Header
+Cookie No HttpOnly Flag
+Cookie Without Secure Flag
+Cookie without SameSite Attribute
+Strict-Transport-Security Header Not Set
+X-Content-Type-Options Header Missing
+Charset Mismatch (Header Versus Meta Content-Type Charset)
+Cookie Poisoning
+Information Disclosure - Suspicious Comments
+Modern Web Application
+Re-examine Cache-control Directives
+Retrieved from Cache
+Session Management Response Identified
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the nuclei output
+[tls-version] [ssl] [info] google-gruyere.appspot.com:443 ["tls10"]
+[weak-cipher-suites:tls-1.0] [ssl] [low] google-gruyere.appspot.com:443 ["[tls10 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]"]
+[deprecated-tls:tls_1.1] [ssl] [info] google-gruyere.appspot.com:443 ["tls11"]
+[weak-cipher-suites:tls-1.1] [ssl] [low] google-gruyere.appspot.com:443 ["[tls11 TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA]"]
+[tls-version] [ssl] [info] google-gruyere.appspot.com:443 ["tls11"]
+[deprecated-tls:tls_1.0] [ssl] [info] google-gruyere.appspot.com:443 ["tls10"]
+[tls-version] [ssl] [info] google-gruyere.appspot.com:443 ["tls12"]
+[tls-version] [ssl] [info] google-gruyere.appspot.com:443 ["tls13"]
+[http-missing-security-headers:permissions-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:x-content-type-options] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:x-permitted-cross-domain-policies] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:clear-site-data] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:strict-transport-security] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:content-security-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:x-frame-options] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:referrer-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:cross-origin-embedder-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:cross-origin-opener-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[http-missing-security-headers:cross-origin-resource-policy] [http] [info] https://google-gruyere.appspot.com/part2
+[options-method] [http] [info] https://google-gruyere.appspot.com/part2 ["GET"]
+[robots-txt-endpoint] [http] [info] https://google-gruyere.appspot.com/robots.txt
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the nikto output
-- Nikto v2.5.0/
-- Nikto v2.5.0/
-+ Target Host: google-gruyere.appspot.com
-+ Target Port: 443
-+ GET /part1/: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
-+ GET /part1/: Uncommon header 'x-cloud-trace-context' found, with contents: 65c6ec39f85b605c46e3e560b2cc4e61.
-+ GET /part1/: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
-+ GET /part1/: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc: 
-+ GET /part1/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
-- Nikto v2.5.0/
-+ Target Host: google-gruyere.appspot.com
-+ Target Port: 443
-+ GET /part1/: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options: 
-+ GET /part1/: Uncommon header 'x-cloud-trace-context' found, with contents: 1f8639edf5a81825d3ab8e2de0c2d0cb.
-+ GET /part1/: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security: 
-+ GET /part1/: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc: 
-+ GET /part1/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/: 
+- Nikto v2.5.0
+---------------------------------------------------------------------------
++ Multiple IPs found: 142.251.37.52, 2a00:1450:4006:800::2014
++ Target IP:          142.251.37.52
++ Target Hostname:    google-gruyere.appspot.com
++ Target Port:        443
+---------------------------------------------------------------------------
++ SSL Info:        Subject:  /CN=*.appspot.com
+                   Ciphers:  TLS_AES_256_GCM_SHA384
+                   Issuer:   /C=US/O=Google Trust Services/CN=WR2
++ Start Time:         2025-06-22 17:02:31 (GMT3)
+---------------------------------------------------------------------------
++ Server: Google Frontend
++ /part2/: The anti-clickjacking X-Frame-Options header is not present. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
++ /part2/: Uncommon header 'x-cloud-trace-context' found, with contents: 429b928b8bdf10e378eaaca57a78d9ef.
++ /part2/: The site uses TLS and the Strict-Transport-Security HTTP header is not defined. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security
++ /part2/: An alt-svc header was found which is advertising HTTP/3. The endpoint is: ':443'. Nikto cannot test HTTP/3 over QUIC. See: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/alt-svc
++ /part2/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type. See: https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server is using a wildcard certificate: *.appspot.com. See: https://en.wikipedia.org/wiki/Wildcard_certificate
++ /part2/: The Content-Encoding header is set to "deflate" which may mean that the server is vulnerable to the BREACH attack. See: http://breachattack.com/
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the wapiti output
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 CSP is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 CSP is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 CSP is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 CSP is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 CSP is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-CSP is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-CSP is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
@@ -105,299 +128,235 @@ HTTP Secure Headers
 -------------------
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Frame-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-XSS-Protection is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 X-Content-Type-Options is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 Strict-Transport-Security is not set
 Evil request:
-    GET /part1 HTTP/1.1
+    GET /part2 HTTP/1.1
     Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-Frame-Options is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-XSS-Protection is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-Content-Type-Options is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-Strict-Transport-Security is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-Frame-Options is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-XSS-Protection is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-X-Content-Type-Options is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
-
-                                  *   *   *
-
-Strict-Transport-Security is not set
-Evil request:
-    GET /part1 HTTP/1.1
-    Host: google-gruyere.appspot.com
-cURL command PoC : "curl "https://google-gruyere.appspot.com/part1""
+cURL command PoC : "curl "https://google-gruyere.appspot.com/part2""
 
                                   *   *   *
 
 ********************************************************************************
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the whatweb output
-WhatWeb report for [1m[34mhttps://google-gruyere.appspot.com/part1[0m
+WhatWeb report for [1m[34mhttps://google-gruyere.appspot.com/part2[0m
 Status    : 200 OK
 Title     : [1m[33mWeb Application Exploits and Defenses[0m
-IP        : 142.250.201.52
+IP        : 142.251.37.52
 Country   : [1m[31mUNITED STATES, US[0m
 
 Summary   : [1mHTTPServer[0m[[1m[36mGoogle Frontend[0m], [1mScript[0m, [1mUncommonHeaders[0m[[0m[22mx-cloud-trace-context,alt-svc[0m]
@@ -425,77 +384,128 @@ Detected Plugins:
 
 HTTP Headers:
 	HTTP/1.1 200 OK
-	Cache-Control: no-cache
-	Pragma: no-cache
-	Content-Type: text/html; charset=utf-8
-	X-Cloud-Trace-Context: 1af9904476a1f2b4ee3293770e0f9a36
-	Date: Fri, 25 Apr 2025 06:04:27 GMT
-	Server: Google Frontend
-	Content-Length: 13650
+	cache-control: no-cache
+	pragma: no-cache
+	content-type: text/html; charset=utf-8
+	x-cloud-trace-context: 0697ed1442c31dab7d7559b82b5e5ec8
+	date: Sun, 22 Jun 2025 14:02:32 GMT
+	server: Google Frontend
+	Content-Length: 37096
 	Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
 	Connection: close
 	
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the commix output
-[[94m09:04:23[0m] [0m[[32minfo[0m] Using 'stdin' for parsing targets list.[0m
+[1mDo you want to check target for the existence of site's sitemap(.xml)? [y/N] > N[0m
+[[94m16:27:28[0m] [0m[[32minfo[0m] Starting crawler for target URL 'https://google-gruyere.appspot.com/part2'.[0m
+[[94m16:27:29[0m] [0m[[32minfo[0m] Searching for usable links with depth 1.[0m
+[[94m16:28:26[0m] [0m[[32minfo[0m] Searching for usable links with depth 2.[0m
+[1mDo you want to normalize crawling results? [Y/n] > Y[0m
+[[94m16:28:26[0m] [[93mwarning[0m] No usable links found (with GET parameters).[0m
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the sqlmap output
         ___
        __H__
- ___ ___[(]_____ ___ ___  {1.9.3#stable}
-|_ -| . [)]     | .'| . |
-|___|_  ["]_|_|_|__,|  _|
+ ___ ___[)]_____ ___ ___  {1.9.4#stable}
+|_ -| . [(]     | .'| . |
+|___|_  [.]_|_|_|__,|  _|
       |_|V...       |_|   https://sqlmap.org
 
 [!] legal disclaimer: Usage of sqlmap for attacking targets without prior mutual consent is illegal. It is the end user's responsibility to obey all applicable local, state and federal laws. Developers assume no liability and are not responsible for any misuse or damage caused by this program
 
-[*] starting @ 09:04:26 /2025-04-25/
+[*] starting @ 17:02:31 /2025-06-22/
 
-[?1049h[22;0;0t[1;24r(B[m[4l[?7h[24;1H[?1049l[23;0;0t[?1l>[09:04:26] [WARNING] using '/var/www/html/SecOps/sqlmap_report' as the output directory
+[?1049h[22;0;0t[1;24r(B[m[4l[?7h[24;1H[?1049l[23;0;0t[?1l>[17:02:31] [WARNING] using '/var/www/html/SecOps/sqlmap_report' as the output directory
 [1/1] URL:
-GET https://google-gruyere.appspot.com/part1
+GET https://google-gruyere.appspot.com/part2
 do you want to test this URL? [Y/n/q]
 > Y
-[09:04:26] [INFO] testing URL 'https://google-gruyere.appspot.com/part1'
-[09:04:26] [WARNING] you've provided target URL without any GET parameters (e.g. 'http://www.site.com/article.php?id=1') and without providing any POST parameters through option '--data'
+[17:02:32] [INFO] testing URL 'https://google-gruyere.appspot.com/part2'
+[17:02:32] [WARNING] you've provided target URL without any GET parameters (e.g. 'http://www.site.com/article.php?id=1') and without providing any POST parameters through option '--data'
 do you want to try URI injections in the target URL itself? [Y/n/q] Y
-[09:04:26] [INFO] using '/var/www/html/SecOps/sqlmap_report/results-04252025_0904am.csv' as the CSV results file in multiple targets mode
-[09:04:26] [INFO] testing connection to the target URL
-[09:04:27] [INFO] testing if the target URL content is stable
-[09:04:28] [INFO] target URL content is stable
-[09:04:28] [INFO] testing if URI parameter '#1*' is dynamic
-[09:04:28] [INFO] URI parameter '#1*' appears to be dynamic
-[09:04:28] [WARNING] heuristic (basic) test shows that URI parameter '#1*' might not be injectable
-[09:04:29] [INFO] testing for SQL injection on URI parameter '#1*'
-[09:04:29] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
-[09:04:39] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
-[09:04:40] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
-[09:04:42] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
-[09:04:44] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
-[09:04:46] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
-[09:04:48] [INFO] testing 'Generic inline queries'
-[09:04:48] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
-[09:04:48] [CRITICAL] considerable lagging has been detected in connection response(s). Please use as high value for option '--time-sec' as possible (e.g. 10 or more)
-[09:04:50] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
-[09:04:52] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
-[09:04:54] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
-[09:04:56] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
-[09:04:58] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
-[09:05:00] [INFO] testing 'Oracle AND time-based blind'
+[17:02:32] [INFO] using '/var/www/html/SecOps/sqlmap_report/results-06222025_0502pm.csv' as the CSV results file in multiple targets mode
+[17:02:32] [INFO] testing connection to the target URL
+[17:02:34] [INFO] testing if the target URL content is stable
+[17:02:35] [INFO] target URL content is stable
+[17:02:35] [INFO] testing if URI parameter '#1*' is dynamic
+[17:02:35] [INFO] URI parameter '#1*' appears to be dynamic
+[17:02:36] [WARNING] heuristic (basic) test shows that URI parameter '#1*' might not be injectable
+[17:02:36] [INFO] testing for SQL injection on URI parameter '#1*'
+[17:02:36] [INFO] testing 'AND boolean-based blind - WHERE or HAVING clause'
+[17:02:41] [INFO] testing 'Boolean-based blind - Parameter replace (original value)'
+[17:02:41] [INFO] testing 'MySQL >= 5.1 AND error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (EXTRACTVALUE)'
+[17:02:43] [INFO] testing 'PostgreSQL AND error-based - WHERE or HAVING clause'
+[17:02:45] [INFO] testing 'Microsoft SQL Server/Sybase AND error-based - WHERE or HAVING clause (IN)'
+[17:02:47] [INFO] testing 'Oracle AND error-based - WHERE or HAVING clause (XMLType)'
+[17:02:48] [INFO] testing 'Generic inline queries'
+[17:02:49] [INFO] testing 'PostgreSQL > 8.1 stacked queries (comment)'
+[17:02:50] [INFO] testing 'Microsoft SQL Server/Sybase stacked queries (comment)'
+[17:02:52] [INFO] testing 'Oracle stacked queries (DBMS_PIPE.RECEIVE_MESSAGE - comment)'
+[17:02:53] [INFO] testing 'MySQL >= 5.0.12 AND time-based blind (query SLEEP)'
+[17:02:55] [INFO] testing 'PostgreSQL > 8.1 AND time-based blind'
+[17:02:57] [INFO] testing 'Microsoft SQL Server/Sybase time-based blind (IF)'
+[17:02:59] [INFO] testing 'Oracle AND time-based blind'
 it is recommended to perform only basic UNION tests if there is not at least one other (potential) technique found. Do you want to reduce the number of requests? [Y/n] Y
-[09:05:02] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
-[09:05:04] [WARNING] URI parameter '#1*' does not seem to be injectable
-[09:05:04] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
-[09:05:04] [WARNING] HTTP error codes detected during run:
+[17:03:00] [INFO] testing 'Generic UNION query (NULL) - 1 to 10 columns'
+[17:03:02] [WARNING] URI parameter '#1*' does not seem to be injectable
+[17:03:02] [ERROR] all tested parameters do not appear to be injectable. Try to increase values for '--level'/'--risk' options if you wish to perform more tests. If you suspect that there is some kind of protection mechanism involved (e.g. WAF) maybe you could try to use option '--tamper' (e.g. '--tamper=space2comment') and/or switch '--random-agent', skipping to the next target
+[17:03:02] [WARNING] HTTP error codes detected during run:
 404 (Not Found) - 72 times
-[09:05:04] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/var/www/html/SecOps/sqlmap_report/results-04252025_0904am.csv'
+[17:03:02] [INFO] you can find results of scanning in multiple targets mode inside the CSV file '/var/www/html/SecOps/sqlmap_report/results-06222025_0502pm.csv'
 
-[*] ending @ 09:05:04 /2025-04-25/
+[*] ending @ 17:03:02 /2025-06-22/
 
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
               the XSStrike output
 [91m
 	XSStrike [97mv3.1.5
 [0m
-[93m[!][0m fuzzywuzzy isn't installed, installing now.
-[91m[-][0m fuzzywuzzy installation failed.
+[97m[~][0m Checking for DOM vulnerabilities [0m
+[91m[-][0m No parameters to test. [0m
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+              the arachni output
+Arachni - Web Application Security Scanner Framework v1.5.1
+   Author: Tasos "Zapotek" Laskos <tasos.laskos@arachni-scanner.com>
+
+           (With the support of the community and the Arachni Team.)
+
+   Website:       http://arachni-scanner.com
+   Documentation: http://arachni-scanner.com/wiki
+
+
+
+
+================================================================================
+
+
+[+] Web Application Security Report - Arachni Framework
+
+[~] Report generated on: 2025-06-22 17:12:37 +0300
+[~] Report false positives at: http://github.com/Arachni/arachni/issues
+
+[+] System settings:
+[~] ---------------
+[~] Version:           1.5.1
+[~] Seed:              27cd4ad451c9a8ddaecc6a09fc1d5680
+[~] Audit started on:  2025-06-22 17:02:33 +0300
+[~] Audit finished on: 2025-06-22 17:12:35 +0300
+[~] Runtime:           00:10:02
+
+[~] URL:        https://google-gruyere.appspot.com/part2
+[~] User agent: Arachni/v1.5.1
+
+[*] Audited elements: 
+[~] * Links
+[~] * Forms
+[~] * Cookies
+[~] * XMLs
+[~] * JSONs
+[~] * UI inputs
+[~] * UI forms
+
+[*] Checks: backup_files, common_directories, insecure_cross_domain_policy_access, http_put, htaccess_limit, origin_spoof_access_restriction_bypass, ssn, x_frame_options, password_autocomplete, insecure_cors_policy, html_objects, http_only_cookies, unencrypted_password_forms, cookie_set_for_parent_domain, captcha, emails, private_ip, mixed_resource, hsts, form_upload, credit_card, cvs_svn_users, insecure_cookies, directory_listing, insecure_client_access_policy, backdoors, webdav, insecure_cross_domain_policy_headers, common_files, interesting_responses, allowed_methods, common_admin_interfaces, xst, localstart_asp, backup_directories, code_injection, code_injection_timing, path_traversal, no_sql_injection_differential, code_injection_php_input_wrapper, unvalidated_redirect, os_cmd_injection_timing, xss_path, xss_tag, sql_injection_differential, sql_injection, ldap_injection, file_inclusion, xss_dom_script_context, sql_injection_timing, unvalidated_redirect_dom, source_code_disclosure, xss, os_cmd_injection, rfi, trainer, xss_script_context, session_fixation, xxe, xss_event, csrf, no_sql_injection, xpath_injection, xss_dom, response_splitting
+
+[~] ===========================
+
+[+] 0 issues were detected.
+

@@ -73,13 +73,13 @@ $user = isset($_SESSION['user']) ? $_SESSION['user'] : null;
                      class="custom-search-input"
                      placeholder="Enter website URL" required>
             </div>
-            <div class="input-group">
+            <!-- <div class="input-group">
               <label for="timeout-input">Timeout (sec):</label>
               <input type="number" id="timeout-input" name="timeout"
                      class="custom-search-input timeout-input"
                      placeholder="E.g., 30"
                      min="1" step="1" required>
-            </div>
+            </div> -->
           </div>
         </div>
         <button type="submit" class="custom-search-button">Scan</button>

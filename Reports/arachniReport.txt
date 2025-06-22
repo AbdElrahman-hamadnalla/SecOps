@@ -1,0 +1,45 @@
+Arachni - Web Application Security Scanner Framework v1.5.1
+   Author: Tasos "Zapotek" Laskos <tasos.laskos@arachni-scanner.com>
+
+           (With the support of the community and the Arachni Team.)
+
+   Website:       http://arachni-scanner.com
+   Documentation: http://arachni-scanner.com/wiki
+
+
+
+
+================================================================================
+
+
+[+] Web Application Security Report - Arachni Framework
+
+[~] Report generated on: 2025-06-22 17:12:37 +0300
+[~] Report false positives at: http://github.com/Arachni/arachni/issues
+
+[+] System settings:
+[~] ---------------
+[~] Version:           1.5.1
+[~] Seed:              27cd4ad451c9a8ddaecc6a09fc1d5680
+[~] Audit started on:  2025-06-22 17:02:33 +0300
+[~] Audit finished on: 2025-06-22 17:12:35 +0300
+[~] Runtime:           00:10:02
+
+[~] URL:        https://google-gruyere.appspot.com/part2
+[~] User agent: Arachni/v1.5.1
+
+[*] Audited elements: 
+[~] * Links
+[~] * Forms
+[~] * Cookies
+[~] * XMLs
+[~] * JSONs
+[~] * UI inputs
+[~] * UI forms
+
+[*] Checks: backup_files, common_directories, insecure_cross_domain_policy_access, http_put, htaccess_limit, origin_spoof_access_restriction_bypass, ssn, x_frame_options, password_autocomplete, insecure_cors_policy, html_objects, http_only_cookies, unencrypted_password_forms, cookie_set_for_parent_domain, captcha, emails, private_ip, mixed_resource, hsts, form_upload, credit_card, cvs_svn_users, insecure_cookies, directory_listing, insecure_client_access_policy, backdoors, webdav, insecure_cross_domain_policy_headers, common_files, interesting_responses, allowed_methods, common_admin_interfaces, xst, localstart_asp, backup_directories, code_injection, code_injection_timing, path_traversal, no_sql_injection_differential, code_injection_php_input_wrapper, unvalidated_redirect, os_cmd_injection_timing, xss_path, xss_tag, sql_injection_differential, sql_injection, ldap_injection, file_inclusion, xss_dom_script_context, sql_injection_timing, unvalidated_redirect_dom, source_code_disclosure, xss, os_cmd_injection, rfi, trainer, xss_script_context, session_fixation, xxe, xss_event, csrf, no_sql_injection, xpath_injection, xss_dom, response_splitting
+
+[~] ===========================
+
+[+] 0 issues were detected.
+

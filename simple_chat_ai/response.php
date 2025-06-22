@@ -37,7 +37,7 @@ try {
             'model' => 'gpt-4o',
             'messages' => [
                 ['role' => 'system', 'content' => 'You are a helpful assistant.'],
-                ['role' => 'user', 'content' => 'This is a report that contains CVEs, CWEs and vulnerability info for websites. Extract each CVE, CWE and vulnerability with its number, get links for each CVE and CWE, description, solution, and the attack vector for each CVE and CWE and vulnerability, and the degree of severity of the vulnerability (Critical, High, Medium, or Low) for each CVE and CWE and vulnerability.'],
+                ['role' => 'user', 'content' => 'This is a report that contains CVEs, CWEs and vulnerability info for websites. Extract each CVE, CWE and vulnerability with its number, get links for each CVE and CWE, description, solution, and the attack vector(NETWORK, LOCAL, ADJACENT, or PHYSICAL) for each CVE and CWE and vulnerability, and the degree of severity of the vulnerability (LOW, MEDIUM, HIGH, or CRITICAL) for each CVE and CWE and vulnerability(Number them).'],
                 ['role' => 'user', 'content' => $reportContent]
             ],
             'temperature' => 0.0,

@@ -1,0 +1,6 @@
+[1mDo you want to check target for the existence of site's sitemap(.xml)? [y/N] > N[0m
+[[94m16:27:28[0m] [0m[[32minfo[0m] Starting crawler for target URL 'https://google-gruyere.appspot.com/part2'.[0m
+[[94m16:27:29[0m] [0m[[32minfo[0m] Searching for usable links with depth 1.[0m
+[[94m16:28:26[0m] [0m[[32minfo[0m] Searching for usable links with depth 2.[0m
+[1mDo you want to normalize crawling results? [Y/n] > Y[0m
+[[94m16:28:26[0m] [[93mwarning[0m] No usable links found (with GET parameters).[0m

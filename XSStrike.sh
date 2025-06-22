@@ -1,1 +1,0 @@
-timeout  "$2" python3 ./XSStrike/xsstrike.py -u "$1" > XSStrikeReport.txt

@@ -1,0 +1,24 @@
+<cweid>1004
+<cweid>1021
+<cweid>1275
+<cweid>319
+<cweid>436
+<cweid>525
+<cweid>565
+<cweid>614
+<cweid>615
+<cweid>693
+Content Security Policy (CSP) Header Not Set
+Missing Anti-clickjacking Header
+Cookie No HttpOnly Flag
+Cookie Without Secure Flag
+Cookie without SameSite Attribute
+Strict-Transport-Security Header Not Set
+X-Content-Type-Options Header Missing
+Charset Mismatch (Header Versus Meta Content-Type Charset)
+Cookie Poisoning
+Information Disclosure - Suspicious Comments
+Modern Web Application
+Re-examine Cache-control Directives
+Retrieved from Cache
+Session Management Response Identified
